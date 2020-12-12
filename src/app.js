@@ -1,4 +1,5 @@
-import sq from './utils.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('test for webpack!');
-console.log(sq(3));
+const template = React.createElement('p', {}, 'React testing');
+ReactDOM.render(template, document.querySelector('#app'));
