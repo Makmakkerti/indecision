@@ -1,25 +1,26 @@
 {
   "name": "indesicion-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "build": "webpack --watch",
-    "serve": "live-server public/"
+    "build": "webpack",
+    "serve": "live-server public/",
+    "dev-server": "webpack-dev-server"
   },
   "author": "makmakkerti",
   "license": "ISC",
   "dependencies": {
+    "acorn": "^8.0.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "live-server": "^1.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "webpack": "^3.12.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -27,12 +28,12 @@
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "webpack-cli": "^4.2.0"
+    "webpack": "3.1.0",
+    "webpack-dev-server": "^2.11.5"
   }
 }

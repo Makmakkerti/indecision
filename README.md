@@ -11,6 +11,9 @@ Made for fun. Never do it in real life! ;)
 * Babel
 * Heroku
 
+## Linter
+* Eslint (airbnb-base)
+
 # Installation process
 ## Install
 npm install
