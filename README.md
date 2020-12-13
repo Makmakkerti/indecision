@@ -27,7 +27,7 @@ make build
 make serve
 
 ## Webpack-dev-server
-make serve-dev
+make dev-server
 
 ## Run Eslint check
 make lint
