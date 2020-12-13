@@ -2,40 +2,22 @@
 root: true
 
 parser: babel-eslint
-extends:
-  # https://github.com/yannickcr/eslint-plugin-react
-  - plugin:react/recommended
-  # https://www.npmjs.com/package/eslint-config-airbnb-base
-  - airbnb-base
-
-plugins:
-  - react
-  - import
-
-rules:
-  react/prop-types: 0
-  arrow-body-style: 0
 
 env:
-  es6: true
-  browser: true
-  node: true
+  es2021: true
+
+extends:
+  - plugin:react/recommended
+  - airbnb-base
 
 parserOptions:
-  ecmaVersion: 2017
   ecmaFeatures:
     jsx: true
+  ecmaVersion: 2017
+  sourceType: module
 
-
-  ### Different from airbnb config
-
-  ### Styling ###
-
-  ### From error to warning ###
-  # was not working when used with flow prop types
   no-unused-vars: warn
   react/no-unused-prop-types: warn
-
   ### ES6 ###
 
   ### Best practices ###
@@ -70,3 +52,15 @@ parserOptions:
   # reason: function composition over default props
   # https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
   react/require-default-props: off # airbnb default: 'error'
+  
+plugins:
+  - react
+  - import
+
+rules: 
+  react/prop-types: 0
+  arrow-body-style: 0
+
+settings:
+  react:
+    version: detect

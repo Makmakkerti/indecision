@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-console */
 /* eslint-disable consistent-return */
 import React from 'react';
@@ -13,6 +14,7 @@ export default class IndecisionApp extends React.Component {
 
   componentDidMount = () => {
     try {
+      // eslint-disable-next-line no-undef
       const json = localStorage.getItem('options');
       if (!json) return;
 
@@ -26,6 +28,7 @@ export default class IndecisionApp extends React.Component {
   componentDidUpdate = (prevProps, prevState) => {
     if (prevState.options.length !== this.state.options.length) {
       const json = JSON.stringify(this.state.options);
+      // eslint-disable-next-line no-undef
       localStorage.setItem('options', json);
     }
   }
@@ -43,7 +46,7 @@ export default class IndecisionApp extends React.Component {
   handlePick = () => {
     const randomNum = Math.floor(Math.random() * this.state.options.length);
     const option = this.state.options[randomNum];
-    // eslint-disable-next-line no-alert
+    // eslint-disable-next-line no-undef
     alert(option);
   }
 

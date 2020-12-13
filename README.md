@@ -1,6 +1,7 @@
 # Indecision app - let computer to choose for you!
 
 Add options and let computer to choose randomly what you need to do!
+Options will be saved in Local Storage of your browser.
 
 Made for fun. Never do it in real life! ;)
 
@@ -9,6 +10,7 @@ Made for fun. Never do it in real life! ;)
 * ReactDOM
 * Webpack
 * Babel
+* Make
 * Heroku
 
 ## Linter
@@ -16,10 +18,16 @@ Made for fun. Never do it in real life! ;)
 
 # Installation process
 ## Install
-npm install
+make install
 
 ## Build and watch
-npm run build
+make build
 
-## Live-server to run locally
-npm run serve
+## Live-server
+make serve
+
+## Webpack-dev-server
+make serve-dev
+
+## Run Eslint check
+make lint
