@@ -3,8 +3,7 @@
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "makmakkerti",
   "license": "ISC",
   "dependencies": {
@@ -17,7 +16,8 @@
     "babel-preset-react": "^6.24.1",
     "live-server": "^1.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-modal": "^3.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
