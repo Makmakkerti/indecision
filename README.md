@@ -11,6 +11,8 @@ Made for fun. Never do it in real life! ;)
 * Webpack
 * Babel
 * Make
+* Sass
+* BEM
 * Heroku
 
 ## Linter
