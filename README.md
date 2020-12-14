@@ -5,6 +5,9 @@ Options will be saved in Local Storage of your browser.
 
 Made for fun. Never do it in real life! ;)
 
+## You can test app visiting:
+https://www.indecision.mokienko.net
+
 ## Tecnologies:
 * React
 * ReactDOM
