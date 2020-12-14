@@ -9,3 +9,6 @@ serve:
 
 dev-server:
 	npx webpack serve
+
+build:
+	npx webpack

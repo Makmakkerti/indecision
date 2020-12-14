@@ -13,7 +13,6 @@ Made for fun. Never do it in real life! ;)
 * Make
 * Sass
 * BEM
-* Heroku
 
 ## Linter
 * Eslint (airbnb-base)
